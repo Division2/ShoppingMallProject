@@ -41,7 +41,9 @@
 						hour = hour - 12;
 					}
 					CT = hour + ":" + minute + ":" + second + " " + am_pm;
-					out.println("현재 접속 시각: " + CT + "\n");
+					out.println("현재 접속 시각: " + CT + "<br>");
+					out.println("5초마다 페이지가 새로고침됩니다.");
+					response.setIntHeader("Refresh", 5);
 				%>
 			</div>
 			<hr>
