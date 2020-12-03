@@ -14,7 +14,7 @@
 	String encType = "utf-8";
 	int maxSize = 5 * 1024 * 1024;
 
-	MultipartRequest multi = new MultipartRequest(request, realFolder,maxSize,encType,new DefaultFileRenamePolicy());
+	MultipartRequest multi = new MultipartRequest(request, realFolder, maxSize, encType, new DefaultFileRenamePolicy());
 
 	String proudctId = multi.getParameter("proudctId");
 	String name = multi.getParameter("name");
