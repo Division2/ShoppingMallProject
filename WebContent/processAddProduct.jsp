@@ -5,7 +5,6 @@
 <%@ page import="dto.Product"%>
 <%@ page import="dao.ProductRepository"%>
 
-
 <%
 	request.setCharacterEncoding("UTF-8");
 
@@ -59,4 +58,3 @@
 	dao.addProduct(newProduct);
 	response.sendRedirect("products.jsp");
 %>
-
